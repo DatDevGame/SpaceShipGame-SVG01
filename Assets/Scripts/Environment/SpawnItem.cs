@@ -38,7 +38,7 @@ public class SpawnItem : MonoBehaviour
         timeDuration2 = Random.Range(50, 70);
         timer2 = timeDuration2;
 
-        timeDuration3 = Random.Range(40, 100);
+        timeDuration3 = Random.Range(40, 60);
         timer3 = timeDuration2;
 
         timeDuration4 = 150f;

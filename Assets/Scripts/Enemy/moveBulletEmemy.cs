@@ -19,7 +19,7 @@ public class moveBulletEmemy : MonoBehaviour
     }
     void Start()
     {
-        movespeed = 5f;
+        movespeed = 3f;
         Destroy(gameObject, 3);
     }
 
