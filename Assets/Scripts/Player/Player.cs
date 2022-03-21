@@ -149,16 +149,27 @@ public class Player : MonoBehaviour
    
     public void SpawnRocketPlayer()
     {
+        m_ui.SetRocket("X: " + limitRocket);
         if (limitRocket > 0)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 limitRocket--;
                 Instantiate(RocketPrefab, PosRocket.transform.position, PosRocket.transform.rotation);
-                m_ui.SetRocket("X: " + limitRocket);
             }
         }
     }
+
+    public void GetRocket(int getRocketPlayer)
+    {
+        limitRocket += getRocketPlayer;
+        if (limitRocket >= 2)
+        {
+            limitRocket = 2;
+        }
+
+    }
+
 
 
 

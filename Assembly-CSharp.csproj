@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Enemy\BulletBlueBoss2.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy\StopBoss.cs" />
+    <Compile Include="Assets\Scripts\Player\ItemRocket.cs" />
     <Compile Include="Assets\Scripts\Player\BulletMovePlayer.cs" />
     <Compile Include="Assets\Scripts\Enemy\ManagerGunLazer.cs" />
     <Compile Include="Assets\Scripts\scoreText.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\Player\BulletItem.cs" />
     <Compile Include="Assets\Scripts\Player\GunFivePlayer.cs" />
+    <Compile Include="Assets\ItemRockets.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spites\Environment\Backgrounds\Background Tip.txt" />

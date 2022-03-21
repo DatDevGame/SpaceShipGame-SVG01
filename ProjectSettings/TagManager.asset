@@ -19,6 +19,7 @@ TagManager:
   - RoundLeftBoss
   - RoundRightBoss
   - RocketAllPlayer
+  - ItemRocket
   layers:
   - Default
   - TransparentFX
