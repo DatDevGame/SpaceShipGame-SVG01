@@ -7,6 +7,8 @@ public class GameController : MonoBehaviour
 {
     AudioSource aus;
     public AudioClip mouseClick;
+
+    public GameObject TutotialSet;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +30,14 @@ public class GameController : MonoBehaviour
     {
         aus.PlayOneShot(mouseClick);
         Application.Quit();
+    }
+
+    public void Tutorial()
+    {
+        TutotialSet.SetActive(true);
+    }
+    public void CancleTutorial()
+    {
+        TutotialSet.SetActive(false);
     }
 }
