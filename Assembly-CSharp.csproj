@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Player\GunThreePlayer.cs" />
     <Compile Include="Assets\Scripts\Player\RocketPlayer.cs" />
     <Compile Include="Assets\Scripts\Environment\DestroyGround.cs" />
+    <Compile Include="Assets\ItemRockets.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\MoveIfPlayerDead.cs" />
     <Compile Include="Assets\Scripts\Enemy\BulletEnemy3.cs" />
@@ -98,7 +99,6 @@
     <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\Player\BulletItem.cs" />
     <Compile Include="Assets\Scripts\Player\GunFivePlayer.cs" />
-    <Compile Include="Assets\ItemRockets.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spites\Environment\Backgrounds\Background Tip.txt" />
