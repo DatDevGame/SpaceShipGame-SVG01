@@ -8,6 +8,7 @@ public class SpawnItem : MonoBehaviour
     public GameObject healItem;
     public GameObject ShieldItem;
     public GameObject BulletItem;
+    public GameObject ItemRocketPrefabs;
 
     //SpawnItemHeal
     float timer;
@@ -22,6 +23,11 @@ public class SpawnItem : MonoBehaviour
     protected float timeDuration3;
 
 
+    //SpawnItemRocket
+    float timer4;
+    protected float timeDuration4;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +40,9 @@ public class SpawnItem : MonoBehaviour
 
         timeDuration3 = Random.Range(40, 100);
         timer3 = timeDuration2;
+
+        timeDuration4 = 150f;
+        timer4 = timeDuration4;
     }
 
     // Update is called once per frame
@@ -42,6 +51,7 @@ public class SpawnItem : MonoBehaviour
         spawnHealItem();
         spawnShieldItem();
         spawnBulletItem();
+        spawnItemRocket();
     }
 
     public void spawnHealItem()
@@ -80,6 +90,19 @@ public class SpawnItem : MonoBehaviour
         {
             Instantiate(BulletItem, spawnPosBullet, Quaternion.identity);
             timer3 = timeDuration3;
+        }
+    }
+
+    public void spawnItemRocket()
+    {
+        float randXPos = Random.Range(-8f, 8f);
+        Vector2 spawnPosRocket = new Vector2(randXPos, 2f);
+
+        timer4 -= Time.deltaTime;
+        if (timer4 <= 0)
+        {
+            Instantiate(ItemRocketPrefabs, spawnPosRocket, ItemRocketPrefabs.transform.rotation);
+            timer4 = timeDuration4;
         }
     }
 

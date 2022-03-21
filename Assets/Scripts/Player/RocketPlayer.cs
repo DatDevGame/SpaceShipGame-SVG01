@@ -58,8 +58,8 @@ public class RocketPlayer : MonoBehaviour
         {
             //damage Enemy
             Enemy hitDamage = other.gameObject.GetComponent<Enemy>();
-            hitDamage.takeDame(200);
-            Destroy(gameObject);
+            hitDamage.takeDame(50);
+            Destroy(gameObject, 5f);
         }
     }
 }
