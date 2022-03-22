@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c9e60919f4b6e438d28ba484fde509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundRocket: {fileID: 8300000, guid: 1b44eeb536c486640b576195856ff556, type: 3}
 --- !u!95 &901156624285158138
 Animator:
   serializedVersion: 3

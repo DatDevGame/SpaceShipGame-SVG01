@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class RocketPlayer : MonoBehaviour
 {
+    AudioSource aus;
+    public AudioClip soundRocket;
+
     protected float SpeedRocket;
     Vector2 moveRocket = new Vector2();
     void Start()
     {
+        aus = GetComponent<AudioSource>();
         Destroy(gameObject, 5f);
         SpeedRocket = 5f;
     }
@@ -35,7 +39,8 @@ public class RocketPlayer : MonoBehaviour
             //damage Enemy
             Enemy hitDamage = other.gameObject.GetComponent<Enemy>();
             hitDamage.takeDame(9999);
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 5f);
+            aus.PlayOneShot(soundRocket);
         }
 
         if (other.gameObject.CompareTag("Enemy2"))
@@ -43,7 +48,8 @@ public class RocketPlayer : MonoBehaviour
             //damage Enemy
             Enemy hitDamage = other.gameObject.GetComponent<Enemy>();
             hitDamage.takeDame(9999);
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 5f);
+            aus.PlayOneShot(soundRocket);
         }
 
         if (other.gameObject.CompareTag("Enemy3"))
@@ -51,7 +57,8 @@ public class RocketPlayer : MonoBehaviour
             //damage Enemy
             Enemy hitDamage = other.gameObject.GetComponent<Enemy>();
             hitDamage.takeDame(9999);
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 5f);
+            aus.PlayOneShot(soundRocket);
         }
 
         if (other.gameObject.CompareTag("Boss1"))
@@ -60,6 +67,7 @@ public class RocketPlayer : MonoBehaviour
             Enemy hitDamage = other.gameObject.GetComponent<Enemy>();
             hitDamage.takeDame(50);
             Destroy(gameObject, 5f);
+            aus.PlayOneShot(soundRocket);
         }
     }
 }
