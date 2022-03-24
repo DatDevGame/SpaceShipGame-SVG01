@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
     }
     public void Playbtn()
     {
+        Time.timeScale = 1f;
         aus.PlayOneShot(mouseClick);
         aus.Stop();
         SceneManager.LoadScene("PlayerScene");
